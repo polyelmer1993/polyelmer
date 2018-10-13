@@ -17,11 +17,12 @@ $(function() {
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
-      $this = $("#sendMessageButton");
-      $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+      // $this = $("#sendMessageButton");
+      // $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
-        type: "POST",
+        // url: "././mail/contact_me.php",
+        url: "//formspree.io/elmer.nmsph@gmail.com",
+        method: "POST",
         data: {
           name: name,
           phone: phone,
