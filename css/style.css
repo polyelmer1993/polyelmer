@@ -4,6 +4,14 @@ html body {
 }
 
 header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+}
+
+header.masthead {
+	height: 100vh;
     text-align: center;
     color: white;
     background-image: url(../img/bg.jpg);
@@ -13,21 +21,40 @@ header.masthead {
     background-size: cover;
 }
 
+header.masthead h1 {
+	font-size: 3.5em;
+	font-weight: 900;
+	font-style: italic;
+	letter-spacing: -4px;
+}
+
+header.masthead img {
+	max-width: 150px;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
 	color: #646363;
 	font-weight: 600;
 }
 
+section h2 {
+	font-weight: 900;
+	font-style: italic;
+}
+
+.service-icon-container {
+	text-align: center;
+}
+
 @media (min-width: 992px){
-	header.masthead {
-	    height: 100vh;
-	    min-height: 40rem;
-	    padding-top: 72px;
-	    padding-bottom: 0;
+	.service-icon-container {
+		text-align: left;
 	}
+
 	header.masthead h1 {
 		font-size: 4.5em;
-		font-weight: 900;
-		font-style: italic;
+	}
+	header.masthead img {
+		max-width: 100%;
 	}
 }
