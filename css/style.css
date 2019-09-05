@@ -1,6 +1,26 @@
 html body {
 	font-family: 'Poppins',sans-serif;
 	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+#mainNav.navbar-scrolled {
+	-webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	background-color: #000;
+	transition: background-color 0.3s;
+}
+/*#mainNav.navbar-scrolled .navbar-brand {
+	color: #212529;
+}*/
+/*#mainNav.navbar-scrolled .navbar-brand:hover {
+	color: #f4623a;
+}*/
+/*#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+color: #212529;
+}*/
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+	color: #fff;
 }
 
 header.masthead {

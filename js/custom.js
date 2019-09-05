@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top - 75)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,15 +23,15 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 56
+    offset: 75
   });
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+    if ($("#mainNav").offset().top > 0) {
+      $("#mainNav").addClass("navbar-scrolled");
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $("#mainNav").removeClass("navbar-scrolled");
     }
   };
   // Collapse now if page is not at top
@@ -39,12 +39,24 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
-    $('.navbar').addClass('d-none');
-  })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-    $('.navbar').removeClass('d-none');
-  })
+  // Magnific popup calls
+  // $('#portfolio').magnificPopup({
+  //   delegate: 'a',
+  //   type: 'image',
+  //   tLoading: 'Loading image #%curr%...',
+  //   mainClass: 'mfp-img-mobile',
+  //   gallery: {
+  //     enabled: true,
+  //     navigateByImgClick: true,
+  //     preload: [0, 1]
+  //   },
+  //   image: {
+  //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+  //   }
+  // });
 
 })(jQuery); // End of use strict
+
+$("#input_number").keyup(function() {
+  $("#input_number").val(this.value.match(/[()-+- 0987654321]*/));
+});
