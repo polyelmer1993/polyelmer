@@ -4,6 +4,11 @@ html body {
 	scroll-behavior: smooth;
 }
 
+.btn-primary {
+    background-color: #fed136;
+    border-color: #fed136;
+}
+
 #page_top .text-primary {
     color: #f44336!important;
 }
@@ -82,11 +87,16 @@ section h2 {
 	}
 }
 
+#portfolio .portfolio-item {
+    margin-bottom: 10px;
+}
+
 @media (min-width: 767px){
 	#portfolio .portfolio-item {
 	    margin: 0 0 30px;
 	}
 }
+
 
 #portfolio * {
     z-index: 2;
@@ -147,4 +157,54 @@ section h2 {
     font-size: 16px;
     font-style: italic;
     margin: 0;
+}
+
+#about {
+    background: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.50);
+}
+
+section#contact {
+    background-color: #212529;
+    background-image: url('https://images.unsplash.com/photo-1485770958101-9dd7e4ea6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 248px;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #212529;
 }
