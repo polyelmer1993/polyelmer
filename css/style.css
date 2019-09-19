@@ -4,9 +4,9 @@ html body {
 	scroll-behavior: smooth;
 }
 
-.btn-primary {
-    background-color: #fed136;
-    border-color: #fed136;
+.btn-primary, .btn-primary:hover {
+    background-color: #f44336;
+    border-color: #f44336;
 }
 
 #page_top .text-primary {
